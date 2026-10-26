@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — SoftShell</title>
+<meta name="description" content="SoftShell by NoffTech LLC — Privacy Policy">
+<style>
+:root { color-scheme: light dark; --fg: #1a1a1a; --muted: #555; --link: #0b57d0; --bg: #fff; --border: #ddd; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg: #eee; --muted: #aaa; --link: #8ab4f8; --bg: #121212; --border: #333; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.55 system-ui, -apple-system, Segoe UI, sans-serif; color: var(--fg); background: var(--bg); }
+header, main, footer { max-width: 42rem; margin: 0 auto; padding: 1.25rem 1.25rem; }
+header { border-bottom: 1px solid var(--border); }
+nav a { margin-right: 1rem; color: var(--link); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+h1 { font-size: 1.6rem; margin: 0 0 0.35rem; }
+h2 { font-size: 1.15rem; margin-top: 1.75rem; }
+.muted { color: var(--muted); font-size: 0.95rem; }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.95rem; }
+th, td { border: 1px solid var(--border); padding: 0.5rem 0.6rem; text-align: left; vertical-align: top; }
+a { color: var(--link); }
+footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem; }
+code { font-size: 0.9em; }
+</style>
+</head>
+<body>
+<header>
+  <p class="muted">SoftShell · NoffTech LLC</p>
+  <nav><a href="index.html">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+</header>
+<main>
+
+<h1>SoftShell Privacy Policy</h1>
+<p class="muted"><strong>Effective date:</strong> October 26, 2026<br>
+<strong>Operator:</strong> NoffTech LLC (“NoffTech,” “we”), Lacey, Washington, USA<br>
+<strong>App:</strong> SoftShell (<code>com.nofftech.softshell</code>)<br>
+<strong>Contact:</strong> <a href="mailto:hello@canteenboard.com">hello@canteenboard.com</a></p>
+
+<h2>Summary</h2>
+<p>SoftShell is an SSH / Mosh client. <strong>NoffTech does not run a SoftShell account system and does not operate a SoftShell backend that receives your session data.</strong> Connection details, passwords, and keys stay on your device (and, if you turn on Full Version iCloud Keychain sync, in <strong>your</strong> iCloud Keychain). Network traffic goes to the hosts <strong>you</strong> choose, not to NoffTech. Purchases go through Apple. We do not show ads and we do not use tracking SDKs.</p>
+
+<h2>What we collect</h2>
+<p><strong>NoffTech does not collect personal information from SoftShell for our own servers.</strong> SoftShell’s privacy manifest declares no tracking and no collected data types for the developer.</p>
+<p>Depending on how you use the app, data may be processed as follows (not as a NoffTech database):</p>
+<table>
+<thead><tr><th>Data</th><th>Where it goes</th><th>Who can see it</th></tr></thead>
+<tbody>
+<tr><td>Host names, usernames, passwords, private keys, Secure Enclave key tokens, snippets, appearance settings</td><td>On your device (Keychain, app container, UserDefaults as applicable)</td><td>You (and anyone with your unlocked device). Optional Face ID / passcode vault gate is local only.</td></tr>
+<tr><td>Full Version saved logins (when enabled)</td><td>Your iCloud Keychain</td><td>You, via Apple’s iCloud Keychain on devices signed into your Apple Account. NoffTech cannot read this.</td></tr>
+<tr><td>SSH / Mosh / SFTP session bytes</td><td>The server(s) you connect to (and any jump host you configure)</td><td>Operators of those hosts. NoffTech is not in that path.</td></tr>
+<tr><td>Local Network use</td><td>Your LAN / network path to reach hosts (system Local Network permission)</td><td>Used only to connect as you direct.</td></tr>
+<tr><td>Face ID / device passcode</td><td>Apple LocalAuthentication on device</td><td>Optional vault unlock; biometrics do not leave the device to NoffTech.</td></tr>
+<tr><td>Full Version unlock and tip-jar purchases</td><td>Apple App Store / StoreKit</td><td>Apple processes payment. NoffTech receives standard sales reports from Apple, not your SSH credentials.</td></tr>
+</tbody>
+</table>
+<p>We do not sell personal information. We do not share personal information with advertising networks or analytics vendors for SoftShell.</p>
+
+<h2>Third parties</h2>
+<ul>
+<li><strong>Apple</strong> — App Store distribution, StoreKit purchases, (optional) iCloud Keychain, system Face ID / Keychain / Local Network APIs. Apple’s privacy policy applies to Apple’s processing.</li>
+<li><strong>Hosts you connect to</strong> — You choose them. Their privacy and security practices are outside NoffTech’s control.</li>
+<li><strong>Open-source libraries</strong> (Citadel, SwiftTerm, swift-mosh, SwiftNIO SSH stack, and related packages) run <strong>on your device</strong> as part of SoftShell. They are not used to phone home to NoffTech.</li>
+</ul>
+
+<h2>Retention and deletion</h2>
+<p>Because SoftShell data is on your device (and optionally your iCloud Keychain), <strong>you control deletion</strong>:</p>
+<ul>
+<li>Delete hosts, keys, and snippets in the app.</li>
+<li>Turn off Face ID lock in Settings.</li>
+<li>Delete SoftShell from the device to remove the app container.</li>
+<li>For Keychain items, remove SoftShell data / Keychain entries as exposed by the app and iOS Settings, and manage iCloud Keychain from your Apple Account devices if you enabled sync.</li>
+<li>Manage or refund App Store purchases through Apple.</li>
+</ul>
+<p>If you contact us about privacy, we may retain your email and the content of the request as needed to respond.</p>
+
+<h2>Children’s privacy</h2>
+<p>SoftShell is not directed at children under 13 (or the equivalent age in your region). We do not knowingly collect personal information from children.</p>
+
+<h2>California / similar laws</h2>
+<p>If SoftShell does not collect personal information about you onto NoffTech systems, many “sale,” “share,” and access/deletion request concepts have limited application. We do <strong>not</strong> sell or share personal information as those terms are commonly used under the CCPA/CPRA. To ask a privacy question, use the contact below.</p>
+
+<h2>International users</h2>
+<p>SoftShell is offered from the United States. If you use it abroad, you are responsible for complying with local laws that apply to your use of remote-access software and to the hosts you connect to.</p>
+
+<h2>Changes</h2>
+<p>We may update this Policy. We will post the new effective date at the top. Continued use after a change means you accept the updated Policy.</p>
+
+<h2>Contact</h2>
+<p>Privacy questions: <a href="mailto:hello@canteenboard.com">hello@canteenboard.com</a><br>
+NoffTech LLC, Lacey, Washington, USA</p>
+
+</main>
+<footer>
+  <p>© 2026 NoffTech LLC · Lacey, Washington, USA</p>
+  <p><a href="https://occultwarlock.github.io/softshell-legal/">softshell-legal</a> · Contact <a href="mailto:hello@canteenboard.com">hello@canteenboard.com</a></p>
+</footer>
+</body>
+</html>
